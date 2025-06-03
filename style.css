@@ -1,8 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .app-icon {
-  width: 150px; /* Tăng kích thước avatar */
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 20px;
   object-fit: cover;
+}
+
+.app-info h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.publisher {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.download-icon {
+  margin-left: auto;
+  font-size: 26px;
+  color: #0af;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.download-icon:hover {
+  transform: scale(1.1);
+  color: #09f;
 }
 
 .app-details {
@@ -32,5 +75,72 @@
   width: 1px;
   height: 30px;
   background-color: #333;
-  margin: 0 5px;
+}
+
+.event-section {
+  margin-bottom: 30px;
+}
+
+.event-section h2 {
+  margin-bottom: 5px;
+}
+
+.available {
+  color: #0af;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.event-banner {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.event-text .update-title {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.event-text h3 {
+  margin: 5px 0 2px;
+  font-size: 16px;
+}
+
+.new-features h2 {
+  margin-bottom: 10px;
+}
+
+.version {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.update-time {
+  float: right;
+  color: #0af;
+  font-size: 12px;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
 }
