@@ -1,6 +1,5 @@
-/* ======= TOÀN BỘ GIAO DIỆN ẢNH 1 + 2 + 3 ======= */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #000;
   color: #fff;
   margin: 0;
@@ -12,12 +11,10 @@ body {
   margin: auto;
 }
 
-/* === ẢNH 1: Phần đầu app === */
 .app-header {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 20px;
 }
 
 .app-icon {
@@ -80,14 +77,12 @@ body {
   background-color: #333;
 }
 
-/* === ẢNH 2: Event & mô tả cập nhật === */
 .event-section {
   margin-bottom: 30px;
 }
 
 .event-section h2 {
   margin-bottom: 5px;
-  font-size: 18px;
 }
 
 .available {
@@ -106,7 +101,6 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
 }
 
 .event-text {
@@ -127,13 +121,8 @@ body {
   font-size: 16px;
 }
 
-.new-features {
-  margin-top: 20px;
-}
-
 .new-features h2 {
   margin-bottom: 10px;
-  font-size: 18px;
 }
 
 .version {
@@ -154,83 +143,43 @@ ul {
 
 ul li {
   margin-bottom: 6px;
-  font-size: 14px;
-  color: #ccc;
 }
 
-/* === ẢNH 3: Xếp hạng, riêng tư & thông tin app === */
+/* ==== CSS GỘP MỚI THÊM CHO ẢNH 2–3 ==== */
 .section {
-  margin-top: 30px;
-  padding: 0 10px;
+  margin: 30px 0;
 }
 
-.section h2, .section h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 600;
+/* Chế độ riêng tư - có khung trắng bo góc */
+.data-privacy {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px 20px;
 }
 
-.section p {
-  font-size: 15px;
-  color: #ccc;
-  margin: 5px 0;
-}
-
-.section p strong {
-  color: #fff;
-  font-weight: 600;
-}
-
-.rating-score {
-  margin: 15px 0;
-}
-
-.rating-score strong {
-  font-size: 40px;
-  color: #fff;
-  display: inline-block;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-.rating-score span {
-  font-size: 22px;
-  color: #aaa;
-  vertical-align: middle;
-}
-
-.rating-score p {
-  font-size: 14px;
-  color: #888;
-  margin: 5px 0;
+.data-privacy h2 {
+  margin-top: 0;
 }
 
 .data-privacy ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px 16px;
+  margin: 10px 0 0;
+  padding-left: 20px;
 }
 
-.data-privacy li {
-  font-size: 15px;
-  color: #ccc;
-  position: relative;
-  padding-left: 15px;
-}
-
-.data-privacy li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #999;
-}
-
+/* Thông tin - chia trái phải */
 .info p {
-  font-size: 14px;
-  color: #aaa;
-  margin: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+  padding: 6px 0;
+  margin: 0;
 }
 
+.info p strong {
+  color: #fff;
+}
+
+.info p:last-child {
+  border-bottom: none;
+}
