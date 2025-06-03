@@ -1,53 +1,128 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f8f9fa;
+  background-color: #000;
+  color: #fff;
   margin: 0;
   padding: 20px;
-  text-align: center;
-  color: #333;
 }
 
-.container {
-  max-width: 480px;
+.app-container {
+  max-width: 500px;
   margin: auto;
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.icon {
-  width: 100px;
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.app-icon {
+  width: 80px;
+  height: 80px;
   border-radius: 20px;
 }
 
-.demo-image {
-  width: 100%;
-  margin-top: 15px;
-  border-radius: 10px;
+.app-info h1 {
+  margin: 0;
+  font-size: 18px;
 }
 
-h1 {
-  font-size: 22px;
-  margin: 10px 0;
+.publisher {
+  color: #aaa;
+  font-size: 14px;
 }
 
-.info-box {
-  text-align: left;
-  margin-top: 20px;
+.download-icon {
+  margin-left: auto;
+  font-size: 24px;
+  color: #0af;
 }
 
-.download-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
+.app-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.detail-box {
+  text-align: center;
+}
+
+.detail-box .value {
+  font-size: 18px;
   font-weight: bold;
 }
 
-.download-button:hover {
-  background-color: #0056b3;
+.detail-box .label {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.event-section {
+  margin-bottom: 30px;
+}
+
+.event-section h2 {
+  margin-bottom: 5px;
+}
+
+.available {
+  color: #0af;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.event-banner {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.event-text .update-title {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.event-text h3 {
+  margin: 5px 0 2px;
+  font-size: 16px;
+}
+
+.new-features h2 {
+  margin-bottom: 10px;
+}
+
+.version {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.update-time {
+  float: right;
+  color: #0af;
+  font-size: 12px;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
 }
